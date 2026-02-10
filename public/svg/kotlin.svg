@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Kotlin">
+  <defs>
+    <linearGradient id="kotlinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f52ff" />
+      <stop offset="50%" stop-color="#ff4fa0" />
+      <stop offset="100%" stop-color="#ffb300" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="16" fill="url(#kotlinGradient)" />
+  <polygon points="12,116 64,64 116,12 12,12" fill="#ffffff" opacity="0.95" />
+  <polygon points="12,116 64,64 116,116" fill="#ffffff" opacity="0.95" />
+</svg>

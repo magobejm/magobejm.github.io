@@ -41,6 +41,8 @@ const SkillsList = () => {
       "Docker",
       "GitLab",
       "Android Studio",
+      "Kotlin",
+      "Desarrollo con IA",
       "Arquitectura de software",
     ],
     Certificaciones: [
@@ -51,9 +53,9 @@ const SkillsList = () => {
       "Curso de Android",
     ],
     "Experiencia clave": [
-      "20+ anos en desarrollo y arquitectura de software",
-      "Gestion de proyecto y equipo para la ONCE",
-      "Analisis funcional y organico en multiples sectores",
+      "20+ años en desarrollo y arquitectura de software",
+      "Gestión de proyecto y equipo para la ONCE",
+      "Análisis funcional y orgánico en múltiples sectores",
     ],
   };
 
