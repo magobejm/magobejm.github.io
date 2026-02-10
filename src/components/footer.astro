@@ -79,24 +79,20 @@ import LikeButton from "../React/LikeButton.tsx";
 
       <div class="flex flex-col items-center lg:items-start space-y-6">
         <div class="w-full max-w-xs">
+          <iframe
+            title="Amazon Music Playlist"
+            style="border-radius:12px; border:0;"
+            src="https://music.amazon.es/user-playlists/279aa55c7dde4dd7821b479233ae9faaeses?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_39mvoEkZxYXazSJbmdCEDuM7q"
+            class="w-full h-40 border border-[var(--white-icon-tr)]"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
           <a
             href="https://music.amazon.es/user-playlists/279aa55c7dde4dd7821b479233ae9faaeses?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_39mvoEkZxYXazSJbmdCEDuM7q"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-between gap-3 border border-[var(--white-icon-tr)] rounded-xl p-4 bg-[#1414149c] hover:bg-[var(--white-icon-tr)] transition duration-300"
+            class="mt-2 inline-flex text-xs text-[var(--white-icon)] hover:text-[var(--white)]"
           >
-            <div>
-              <p class="text-[var(--white)] text-sm">Playlist personal</p>
-              <p class="text-[var(--white-icon)] text-xs">Amazon Music</p>
-            </div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="size-6 text-[var(--white-icon)]"
-            >
-              <path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z" />
-            </svg>
+            Abrir playlist en Amazon Music
           </a>
         </div>
       </div>
