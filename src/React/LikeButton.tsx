@@ -103,7 +103,7 @@ const LikeButton = () => {
           text-[var(--white)]
         `}
         >
-          {likes} Likes
+          {likes} Me gusta
         </span>
       </button>
     </div>

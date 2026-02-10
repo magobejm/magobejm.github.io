@@ -1,16 +1,11 @@
 ---
 const technologies = [
-  "nodejs",
-  "javaScript",
-  "typeScript",
-  "react",
-  "astro",
-  "HTML5",
-  "CSS3",
-  "git",
-  "mysql",
-  "bash",
-  "tailwindcss",
+  { id: "docker", label: "Docker" },
+  { id: "gitlab", label: "GitLab" },
+  { id: "androidstudio", label: "Android Studio" },
+  { id: "git", label: "Git" },
+  { id: "javaScript", label: "JavaScript" },
+  { id: "typeScript", label: "TypeScript" },
 ];
 ---
 
@@ -29,15 +24,15 @@ const technologies = [
       [...technologies, ...technologies, ...technologies].map((tech) => (
         <div class="flex items-center gap-2 group transition-all duration-300">
           <img
-            src={`/svg/${tech}.svg`}
-            alt={tech}
+            src={`/svg/${tech.id}.svg`}
+            alt={tech.label}
             class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
             width="30"
             height="30"
             loading="lazy"
           />
           <span class="text-lg font-medium text-[var(--white-icon)]">
-            {tech.charAt(0).toUpperCase() + tech.slice(1)}
+            {tech.label}
           </span>
         </div>
       ))
