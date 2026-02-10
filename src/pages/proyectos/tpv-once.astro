@@ -7,15 +7,45 @@ import Layout from "@/layouts/Layout.astro";
     <a href="/#projects" class="text-[var(--sec)]">Volver a proyectos</a>
     <h1 class="text-4xl md:text-5xl font-semibold mt-4 mb-6">TPV ONCE</h1>
     <p class="text-[var(--white-icon)] text-lg mb-6">
-      Diseño de la arquitectura software del nuevo TPV de la ONCE sobre un
-      terminal homologado para aplicaciones de gestión, juego y operaciones
-      financieras.
+      Desarrollamos y evolucionamos una plataforma integral de TPV Android para
+      entorno corporativo, compuesta por una app y múltiples servicios de
+      sistema desacoplados (dispositivo, impresión, descargas, lectura de
+      periféricos, voz y utilidades operativas). La solución incluye
+      comunicación entre apps mediante AIDL, gestión de conectividad,
+      telecarga/actualizaciones, monitorización técnica y herramientas de
+      soporte en terminal, con alta exigencia en los requisitos de seguridad,
+      accesibilidad y conectividad.
     </p>
-    <h2 class="text-2xl font-medium mb-3">Responsabilidades</h2>
+    <h2 class="text-2xl font-medium mb-3">Ecosistema MDM</h2>
+    <ul class="list-disc pl-5 space-y-2 text-[var(--white-icon)] mb-6">
+      <li>
+        mdm-api: API REST (Spring Boot, Java 8, JPA) para gestión remota de
+        terminales, recepción de alertas/analíticas, parámetros, errores, SOS,
+        uso funcional y procesos de actualización.
+      </li>
+      <li>
+        mdm-web: consola de administración web (Spring Boot + Thymeleaf +
+        Spring Security) para operación del parque de TPV: equipos, grupos,
+        permisos, paquetes/publicaciones, comandos remotos e informes
+        operativos.
+      </li>
+    </ul>
+    <h2 class="text-2xl font-medium mb-3">Stack y Delivery</h2>
     <ul class="list-disc pl-5 space-y-2 text-[var(--white-icon)]">
-      <li>Gestión de proyecto y equipo.</li>
-      <li>Diseño de arquitectura y funcionalidades clave del terminal.</li>
-      <li>Coordinación con equipos de otras corporaciones.</li>
+      <li>
+        Stack principal: Android (Kotlin/Java, Gradle, AIDL), Java Spring
+        Boot, Oracle/H2, WAR sobre WildFly y scripts Node para procesos
+        auxiliares.
+      </li>
+      <li>
+        Utilizamos Docker Compose para montar nuestros entornos de trabajo y
+        Jenkins para el circuito de Integración Continua.
+      </li>
+      <li>
+        El despliegue se realiza a través de Jenkins, con fases de despliegue
+        que incluyen resources con hardware específicos.
+      </li>
+      <li>Hemos migrado de GitFlow a TBD + Feature Toggles.</li>
     </ul>
   </main>
 </Layout>

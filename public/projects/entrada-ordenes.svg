@@ -1,0 +1,35 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700' role='img' aria-label='Entrada de Ordenes'>
+  <defs>
+    <linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#0b1020'/>
+      <stop offset='100%' stop-color='#1d4ed8'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='70%' cy='20%' r='60%'>
+      <stop offset='0%' stop-color='#ffffff' stop-opacity='0.35'/>
+      <stop offset='100%' stop-color='#ffffff' stop-opacity='0'/>
+    </radialGradient>
+    <pattern id='grid' width='44' height='44' patternUnits='userSpaceOnUse'>
+      <path d='M44 0H0V44' fill='none' stroke='#ffffff' stroke-opacity='0.08' stroke-width='1'/>
+    </pattern>
+  </defs>
+  <rect width='1200' height='700' fill='url(#bg)'/>
+  <rect width='1200' height='700' fill='url(#grid)'/>
+  <rect width='1200' height='700' fill='url(#glow)'/>
+  <g opacity='0.35' stroke='#ffffff' stroke-width='2' fill='none'>
+    <path d='M70 560 C260 500, 420 620, 620 560 S980 500, 1150 560'/>
+    <path d='M70 610 C260 550, 420 670, 620 610 S980 550, 1150 610'/>
+  </g>
+  <g>
+    <g>
+      <rect x='760' y='190' width='320' height='300' rx='20' fill='#0b1120' stroke='#98c9ff' stroke-width='3'/>
+      <rect x='790' y='235' width='260' height='38' rx='8' fill='#172741'/>
+      <rect x='790' y='295' width='120' height='150' rx='10' fill='#1c3250'/>
+      <rect x='930' y='295' width='120' height='70' rx='10' fill='#244264'/>
+      <rect x='930' y='375' width='120' height='70' rx='10' fill='#2f567f'/>
+      <path d='M805 450 Q860 390 905 420' stroke='#8effd8' stroke-width='5' fill='none'/>
+    </g>
+  </g>
+  <rect x='48' y='70' width='660' height='110' rx='18' fill='#0b0f18' fill-opacity='0.45' stroke='#ffffff' stroke-opacity='0.24'/>
+  <text x='82' y='130' fill='#ffffff' font-family='Montserrat, Arial, sans-serif' font-size='54' font-weight='700'>Entrada de Ordenes</text>
+  <text x='82' y='165' fill='#d9e4ff' font-family='Montserrat, Arial, sans-serif' font-size='22'>Operaciones sobre fondos y cuentas</text>
+</svg>

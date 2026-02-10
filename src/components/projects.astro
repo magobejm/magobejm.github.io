@@ -1,10 +1,7 @@
 ---
-import { Image } from "astro:assets";
-import genericProject from "../../public/project-generic.png";
-
 interface Project {
   title: string;
-  image: ImageMetadata;
+  image: string;
   link: string;
   preview: string;
   status: string;
@@ -13,91 +10,91 @@ interface Project {
 const projects: Project[] = [
   {
     title: "TPV ONCE",
-    image: genericProject as ImageMetadata,
+    image: "/projects/tpv-once.svg",
     link: "/proyectos/tpv-once",
     preview: "/proyectos/tpv-once",
     status: "ONCE (2012-Actualidad)",
   },
   {
     title: "EVO (ONCE)",
-    image: genericProject as ImageMetadata,
+    image: "/projects/evo-once.svg",
     link: "/proyectos/evo-once",
     preview: "/proyectos/evo-once",
     status: "ONCE (2005-2012)",
   },
   {
     title: "GRVE (ONCE)",
-    image: genericProject as ImageMetadata,
+    image: "/projects/grve-once.svg",
     link: "/proyectos/grve-once",
     preview: "/proyectos/grve-once",
     status: "ONCE (2005-2012)",
   },
   {
     title: "Hiscomofi (ONCE)",
-    image: genericProject as ImageMetadata,
+    image: "/projects/hiscomofi-once.svg",
     link: "/proyectos/hiscomofi-once",
     preview: "/proyectos/hiscomofi-once",
     status: "ONCE (2005-2012)",
   },
   {
     title: "Observatorio de Precios",
-    image: genericProject as ImageMetadata,
+    image: "/projects/observatorio-precios.svg",
     link: "/proyectos/observatorio-precios",
     preview: "/proyectos/observatorio-precios",
     status: "Ministerio de Industria, Turismo y Comercio (2005-2012)",
   },
   {
     title: "Tramitación de Permisos Internacionales",
-    image: genericProject as ImageMetadata,
+    image: "/projects/permisos-internacionales.svg",
     link: "/proyectos/permisos-internacionales",
     preview: "/proyectos/permisos-internacionales",
     status: "Consejo Superior de Deportes (2005-2012)",
   },
   {
     title: "Entrada de Órdenes",
-    image: genericProject as ImageMetadata,
+    image: "/projects/entrada-ordenes.svg",
     link: "/proyectos/entrada-ordenes",
     preview: "/proyectos/entrada-ordenes",
     status: "Morgan Stanley S.A. (2005-2012)",
   },
   {
     title: "Comunidades móviles de ocio",
-    image: genericProject as ImageMetadata,
+    image: "/projects/comunidades-lanetro-zed.svg",
     link: "/proyectos/comunidades-lanetro-zed",
     preview: "/proyectos/comunidades-lanetro-zed",
     status: "LaNetro Zed S.A. (2005-2012)",
   },
   {
     title: "Office Tunnel",
-    image: genericProject as ImageMetadata,
+    image: "/projects/office-tunnel.svg",
     link: "/proyectos/office-tunnel",
     preview: "/proyectos/office-tunnel",
     status: "Santiago & Cintra Ibérica S.A. (2003-2005)",
   },
   {
     title: "Survey Tunnel",
-    image: genericProject as ImageMetadata,
+    image: "/projects/survey-tunnel.svg",
     link: "/proyectos/survey-tunnel",
     preview: "/proyectos/survey-tunnel",
     status: "Santiago & Cintra Ibérica S.A. (2003-2005)",
   },
   {
     title: "SICE (Telefónica I+D)",
-    image: genericProject as ImageMetadata,
+    image: "/projects/sice-telefonica.svg",
     link: "/proyectos/sice-telefonica",
     preview: "/proyectos/sice-telefonica",
     status: "Axpe Consulting (2002-2003)",
   },
   {
     title: "Softel: Venta y autoventa para Pocket PC",
-    image: genericProject as ImageMetadata,
+    image: "/projects/softel-pocket-pc.svg",
     link: "/proyectos/softel-pocket-pc",
     preview: "/proyectos/softel-pocket-pc",
     status: "PARC Informática S.L. (2000-2002)",
   },
   {
     title: "Softcom: Comunicación de terminales de venta",
-    image: genericProject as ImageMetadata,
+    image: "/projects/softcom-comunicaciones.svg",
     link: "/proyectos/softcom-comunicaciones",
     preview: "/proyectos/softcom-comunicaciones",
     status: "PARC Informática S.L. (2000-2002)",
@@ -120,10 +117,11 @@ const projects: Project[] = [
             <div class="block">
               <div class="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
                 <a href={project.preview}>
-                  <Image
+                  <img
                     src={project.image}
                     alt={project.title}
                     class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </a>
               </div>

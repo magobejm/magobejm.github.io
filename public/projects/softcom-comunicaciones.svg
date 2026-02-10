@@ -1,0 +1,35 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700' role='img' aria-label='Softcom Comunicaciones'>
+  <defs>
+    <linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#1f2937'/>
+      <stop offset='100%' stop-color='#0891b2'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='70%' cy='20%' r='60%'>
+      <stop offset='0%' stop-color='#ffffff' stop-opacity='0.35'/>
+      <stop offset='100%' stop-color='#ffffff' stop-opacity='0'/>
+    </radialGradient>
+    <pattern id='grid' width='44' height='44' patternUnits='userSpaceOnUse'>
+      <path d='M44 0H0V44' fill='none' stroke='#ffffff' stroke-opacity='0.08' stroke-width='1'/>
+    </pattern>
+  </defs>
+  <rect width='1200' height='700' fill='url(#bg)'/>
+  <rect width='1200' height='700' fill='url(#grid)'/>
+  <rect width='1200' height='700' fill='url(#glow)'/>
+  <g opacity='0.35' stroke='#ffffff' stroke-width='2' fill='none'>
+    <path d='M70 560 C260 500, 420 620, 620 560 S980 500, 1150 560'/>
+    <path d='M70 610 C260 550, 420 670, 620 610 S980 550, 1150 610'/>
+  </g>
+  <g>
+    <g>
+      <rect x='760' y='220' width='130' height='210' rx='20' fill='#0d182b' stroke='#8ed1ff' stroke-width='3'/>
+      <rect x='960' y='220' width='130' height='210' rx='14' fill='#121d33' stroke='#8ed1ff' stroke-width='3'/>
+      <path d='M900 280 H950' stroke='#8fffd9' stroke-width='8' stroke-linecap='round'/>
+      <path d='M950 370 H900' stroke='#8fffd9' stroke-width='8' stroke-linecap='round'/>
+      <path d='M938 266 L955 280 L938 294' fill='none' stroke='#8fffd9' stroke-width='5'/>
+      <path d='M912 356 L895 370 L912 384' fill='none' stroke='#8fffd9' stroke-width='5'/>
+    </g>
+  </g>
+  <rect x='48' y='70' width='660' height='110' rx='18' fill='#0b0f18' fill-opacity='0.45' stroke='#ffffff' stroke-opacity='0.24'/>
+  <text x='82' y='130' fill='#ffffff' font-family='Montserrat, Arial, sans-serif' font-size='54' font-weight='700'>Softcom Comunicaciones</text>
+  <text x='82' y='165' fill='#d9e4ff' font-family='Montserrat, Arial, sans-serif' font-size='22'>Sincronizacion de terminales y facturacion</text>
+</svg>

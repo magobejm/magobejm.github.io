@@ -40,7 +40,9 @@ const SkillsList = () => {
     Aptitudes: [
       "Docker",
       "GitLab",
+      "Jira",
       "Android Studio",
+      "IntelliJ IDEA",
       "Kotlin",
       "Desarrollo con IA",
       "Arquitectura de software",

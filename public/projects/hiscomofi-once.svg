@@ -1,0 +1,36 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700' role='img' aria-label='Hiscomofi ONCE'>
+  <defs>
+    <linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#111827'/>
+      <stop offset='100%' stop-color='#334155'/>
+    </linearGradient>
+    <radialGradient id='glow' cx='70%' cy='20%' r='60%'>
+      <stop offset='0%' stop-color='#ffffff' stop-opacity='0.35'/>
+      <stop offset='100%' stop-color='#ffffff' stop-opacity='0'/>
+    </radialGradient>
+    <pattern id='grid' width='44' height='44' patternUnits='userSpaceOnUse'>
+      <path d='M44 0H0V44' fill='none' stroke='#ffffff' stroke-opacity='0.08' stroke-width='1'/>
+    </pattern>
+  </defs>
+  <rect width='1200' height='700' fill='url(#bg)'/>
+  <rect width='1200' height='700' fill='url(#grid)'/>
+  <rect width='1200' height='700' fill='url(#glow)'/>
+  <g opacity='0.35' stroke='#ffffff' stroke-width='2' fill='none'>
+    <path d='M70 560 C260 500, 420 620, 620 560 S980 500, 1150 560'/>
+    <path d='M70 610 C260 550, 420 670, 620 610 S980 550, 1150 610'/>
+  </g>
+  <g>
+    <g>
+      <rect x='790' y='190' width='220' height='300' rx='16' fill='#0f172a' stroke='#a6d0ff' stroke-width='3'/>
+      <rect x='830' y='250' width='140' height='10' rx='5' fill='#98bbff'/>
+      <rect x='830' y='285' width='140' height='10' rx='5' fill='#98bbff'/>
+      <rect x='830' y='320' width='100' height='10' rx='5' fill='#98bbff'/>
+      <rect x='740' y='250' width='130' height='170' rx='12' fill='#13233f' stroke='#8bd7ff'/>
+      <path d='M870 340 C915 340, 940 360, 960 390' stroke='#8bffd9' stroke-width='5' fill='none'/>
+      <circle cx='970' cy='395' r='10' fill='#8bffd9'/>
+    </g>
+  </g>
+  <rect x='48' y='70' width='660' height='110' rx='18' fill='#0b0f18' fill-opacity='0.45' stroke='#ffffff' stroke-opacity='0.24'/>
+  <text x='82' y='130' fill='#ffffff' font-family='Montserrat, Arial, sans-serif' font-size='54' font-weight='700'>Hiscomofi ONCE</text>
+  <text x='82' y='165' fill='#d9e4ff' font-family='Montserrat, Arial, sans-serif' font-size='22'>Comunicados y documentacion oficial</text>
+</svg>
