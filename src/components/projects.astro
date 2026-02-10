@@ -1,9 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import svgl from "../../public/svgl.png";
-import stockin from "../../public/stockin.png";
-import moviesfordevs from "../../public/moviesfordevs.png";
-import velez from "../../public/velez.png";
+import genericProject from "../../public/project-generic.png";
 
 interface Project {
   title: string;
@@ -15,32 +12,32 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "MoviesForDevs",
-    image: moviesfordevs as ImageMetadata,
+    title: "ONCE Systems Evolution",
+    image: genericProject as ImageMetadata,
     link: "https://github.com/gothsec/MoviesForDevs",
     preview: "https://movies-for-devs.vercel.app",
-    status: "Deployed",
+    status: "Enterprise Project",
   },
   {
-    title: "StockIn",
-    image: stockin as ImageMetadata,
+    title: "Retail Prices Observatory",
+    image: genericProject as ImageMetadata,
     link: "https://github.com/gothsec/stockin-demo",
     preview: "https://stockin-demo.vercel.app",
-    status: "On Development",
+    status: "Public Sector Project",
   },
   {
-    title: "Svgl.app",
-    image: svgl as ImageMetadata,
+    title: "International Permits Processing",
+    image: genericProject as ImageMetadata,
     link: "https://github.com/pheralb/svgl",
     preview: "https://svgl.app",
-    status: "Contributor",
+    status: "Sports Council Project",
   },
   {
-    title: "Rifas Velez Web",
-    image: velez as ImageMetadata,
+    title: "Order Entry Platform (Morgan Stanley)",
+    image: genericProject as ImageMetadata,
     link: "https://github.com/Buga-Software/rifasvelez-web",
     preview: "https://www.rifasvelez.com",
-    status: "Deployed",
+    status: "Financial Project",
   },
 ];
 ---
@@ -50,7 +47,7 @@ const projects: Project[] = [
   class="py-12 border-t border-[#ffffff10] text-[var(--white)]"
 >
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">My work</h2>
+    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">Professional Experience</h2>
     <h3 class="text-4xl md:text-5xl font-medium mb-8">Projects</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
