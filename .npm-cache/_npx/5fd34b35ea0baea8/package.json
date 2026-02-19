@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@grec0/mcp-oracle-db": "^0.1.4"
+  }
+}

@@ -5,6 +5,7 @@ interface Project {
   link: string;
   preview: string;
   status: string;
+  description: string;
 }
 
 const projects: Project[] = [
@@ -14,6 +15,7 @@ const projects: Project[] = [
     link: "/proyectos/tpv-once",
     preview: "/proyectos/tpv-once",
     status: "ONCE (2012-Actualidad)",
+    description: "Arquitectura software para terminales financieros homologados. Gestión de equipo y diseño de funcionalidades críticas de juego.",
   },
   {
     title: "EVO (ONCE)",
@@ -21,6 +23,7 @@ const projects: Project[] = [
     link: "/proyectos/evo-once",
     preview: "/proyectos/evo-once",
     status: "ONCE (2005-2012)",
+    description: "Evolución de sistemas y provisión de herramientas y entornos de arquitectura para el área de desarrollo.",
   },
   {
     title: "GRVE (ONCE)",
@@ -28,6 +31,7 @@ const projects: Project[] = [
     link: "/proyectos/grve-once",
     preview: "/proyectos/grve-once",
     status: "ONCE (2005-2012)",
+    description: "Gestión integral de la red de ventas nacional de juegos, integrando aplicaciones móviles y de oficina.",
   },
   {
     title: "Hiscomofi (ONCE)",
@@ -35,6 +39,7 @@ const projects: Project[] = [
     link: "/proyectos/hiscomofi-once",
     preview: "/proyectos/hiscomofi-once",
     status: "ONCE (2005-2012)",
+    description: "Sistema de gestión y distribución de comunicados oficiales y documentación entre entidades de la organización.",
   },
   {
     title: "Observatorio de Precios",
@@ -42,6 +47,7 @@ const projects: Project[] = [
     link: "/proyectos/observatorio-precios",
     preview: "/proyectos/observatorio-precios",
     status: "Ministerio de Industria, Turismo y Comercio (2005-2012)",
+    description: "Análisis y desarrollo orgánico para el seguimiento de indicadores económicos nacionales.",
   },
   {
     title: "Tramitación de Permisos Internacionales",
@@ -49,6 +55,7 @@ const projects: Project[] = [
     link: "/proyectos/permisos-internacionales",
     preview: "/proyectos/permisos-internacionales",
     status: "Consejo Superior de Deportes (2005-2012)",
+    description: "Diseño y programación de la plataforma para la gestión de actividades deportivas en el extranjero.",
   },
   {
     title: "Entrada de Órdenes",
@@ -56,6 +63,7 @@ const projects: Project[] = [
     link: "/proyectos/entrada-ordenes",
     preview: "/proyectos/entrada-ordenes",
     status: "Morgan Stanley S.A. (2005-2012)",
+    description: "Sistema financiero para operaciones sobre fondos de inversión, planes de pensiones y cuentas bancarias.",
   },
   {
     title: "Comunidades móviles de ocio",
@@ -63,6 +71,7 @@ const projects: Project[] = [
     link: "/proyectos/comunidades-lanetro-zed",
     preview: "/proyectos/comunidades-lanetro-zed",
     status: "LaNetro Zed S.A. (2005-2012)",
+    description: "Desarrollo de plataformas de entretenimiento móvil: blogs, descarga de contenidos y mensajería.",
   },
   {
     title: "Office Tunnel",
@@ -70,6 +79,7 @@ const projects: Project[] = [
     link: "/proyectos/office-tunnel",
     preview: "/proyectos/office-tunnel",
     status: "Santiago & Cintra Ibérica S.A. (2003-2005)",
+    description: "Software de oficina para el seguimiento y cálculo topográfico de obras de excavación subterránea.",
   },
   {
     title: "Survey Tunnel",
@@ -77,6 +87,7 @@ const projects: Project[] = [
     link: "/proyectos/survey-tunnel",
     preview: "/proyectos/survey-tunnel",
     status: "Santiago & Cintra Ibérica S.A. (2003-2005)",
+    description: "Aplicación de campo de alta precisión para el control topográfico en la construcción de túneles.",
   },
   {
     title: "SICE (Telefónica I+D)",
@@ -84,6 +95,7 @@ const projects: Project[] = [
     link: "/proyectos/sice-telefonica",
     preview: "/proyectos/sice-telefonica",
     status: "Axpe Consulting (2002-2003)",
+    description: "Automatización y control mediante dispositivos móviles de los operarios de mantenimiento de telefonía pública.",
   },
   {
     title: "Softel: Venta y autoventa para Pocket PC",
@@ -91,6 +103,7 @@ const projects: Project[] = [
     link: "/proyectos/softel-pocket-pc",
     preview: "/proyectos/softel-pocket-pc",
     status: "PARC Informática S.L. (2000-2002)",
+    description: "Solución pionera en movilidad para la automatización de fuerzas de ventas en flotas de distribución.",
   },
   {
     title: "Softcom: Comunicación de terminales de venta",
@@ -98,6 +111,7 @@ const projects: Project[] = [
     link: "/proyectos/softcom-comunicaciones",
     preview: "/proyectos/softcom-comunicaciones",
     status: "PARC Informática S.L. (2000-2002)",
+    description: "Módulo de sincronización entre terminales portátiles y sistemas centrales de facturación.",
   },
 ];
 ---
@@ -128,11 +142,16 @@ const projects: Project[] = [
               <div class="flex items-center px-3">
                 <div class="flex-grow">
                   <h4 class="text-2xl font-semibold">{project.title}</h4>
-                  <span class="py-1 text-sm text-[var(--white-icon)]">
-                    {project.status}
-                  </span>
+                  <div class="flex flex-col mb-2">
+                    <span class="text-sm text-[var(--sec)] font-medium">
+                      {project.status}
+                    </span>
+                    <p class="text-sm text-[var(--white-icon)] mt-1 leading-relaxed">
+                      {project.description}
+                    </p>
+                  </div>
                 </div>
-                <div class="flex gap-2 ml-auto">
+                <div class="flex gap-2 ml-auto self-start">
                   <a
                     href={project.link}
                     aria-label="Ver detalle"
