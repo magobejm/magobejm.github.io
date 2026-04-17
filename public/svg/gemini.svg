@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Gemini">
+  <defs>
+    <linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ab4f8" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#5eead4" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="18" fill="#111827" />
+  <path d="M64 16 74 44 102 54 74 64 64 92 54 64 26 54 54 44z" fill="url(#gg)"/>
+</svg>
